@@ -75,6 +75,22 @@
         <td>30</td>
       </tr>
     </table>
+    <hr>
+    <blockquote>Test if String Starts With Certain Characters in PHP</blockquote>
+    <a href="https://stackoverflow.com/questions/1962031/how-to-check-if-a-string-starts-with-in-php">Link to Stack Overflow</a>
+    <pre>
+        ?php 
+        function startsWith($string, $startString) { 
+        $len = strlen($startString); 
+        return (substr($string, 0, $len) === $startString); 
+        } 
+
+        // usage
+        echo startsWith("cat", "c"); // true
+        echo startsWith("dog", "x"); // false
+
+        ?> 
+    </pre>
 </body>
 </html>
 
